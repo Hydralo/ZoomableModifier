@@ -3,12 +3,7 @@ import ZoomableModifier
 
 struct ContentView: View {
     var body: some View {
-        VStack(spacing: 30) {
-            Text("🔍 Zoomable Examples")
-                .font(.title)
-                .bold()
-                .padding(.top)
-
+        TabView {
             // 1) Example #1: Zoomable Image
             VStack {
                 Text("Image Example")
@@ -20,7 +15,10 @@ struct ContentView: View {
                     .border(Color.gray, width: 1)
                     .zoomable(minZoomScale: 1, maxZoomScale: 4)
             }
-
+            .tabItem {
+                Label("Image", systemImage: "photo")
+            }
+                
             // 2) Example #2: Zoomable Rectangle with Text
             VStack {
                 Text("Rectangle Example")
@@ -36,10 +34,10 @@ struct ContentView: View {
                     .border(Color.gray, width: 1)
                     .zoomable(minZoomScale: 1, maxZoomScale: 3)
             }
-
-            Spacer()
+            .tabItem {
+                Label("Text", systemImage: "text.magnifyingglass")
+            }
         }
-        .padding()
     }
 }
 
