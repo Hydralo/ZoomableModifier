@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct ZoomableModifier: ViewModifier {
+public struct ZoomableModifier: ViewModifier {
     let minZoomScale: CGFloat
     let maxZoomScale: CGFloat
 
@@ -8,7 +8,7 @@ struct ZoomableModifier: ViewModifier {
     @State private var transform: CGAffineTransform = .identity
     @State private var contentSize: CGSize = .zero
 
-    func body(content: Content) -> some View {
+    public func body(content: Content) -> some View {
         content
             .background(alignment: .topLeading) {
                 GeometryReader { proxy in
@@ -211,5 +211,13 @@ private extension CGAffineTransform {
 private extension ClosedRange<CGFloat> {
     func clamp(_ value: CGFloat) -> CGFloat {
         min(max(value, lowerBound), upperBound)
+    }
+}
+
+// Block based wrapper to allow conditional modification
+public extension View {
+    @ViewBuilder
+    func modifyBlock(@ViewBuilder _ block: (Self) -> some View) -> some View {
+        block(self)
     }
 }
