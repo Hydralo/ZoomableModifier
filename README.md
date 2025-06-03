@@ -1,8 +1,10 @@
 # ZoomableViewModifier
 
-[![Swift Package Manager][spm-badge]][spm-link] [![iOS Version][ios-badge]][ios-link] [![License][license-badge]][license-link]
+[![License: MIT](https://img.shields.io/badge/License-MIT-black.svg)](https://opensource.org/licenses/MIT)
 
 A lightweight SwiftUI package that makes any `View` pinch-to-zoomable, draggable, and double-tap-zoomable. Perfect for images, maps, charts, or any container you want your users to interact with.
+
+![zoomable-demo](https://github.com/user-attachments/assets/ca586a48-6be9-46bb-8113-e3dc129b16e9)
 
 ---
 
@@ -14,10 +16,6 @@ A lightweight SwiftUI package that makes any `View` pinch-to-zoomable, draggable
 - **Double-tap zoom:** Quickly toggle between minimum and maximum scale with a two-finger tap.
 - **Bounds clamping:** Prevents over-zooming and panning outside the content’s edges.
 - **Easy to use:** Apply via a single `.zoomable(...)` modifier to any SwiftUI `View`.
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/YourGitHubUsername/ZoomableViewModifier/main/Screenshots/zoomable-demo.png" alt="Demo Screenshot" width="600">
-</p>
 
 ---
 
@@ -32,3 +30,28 @@ A lightweight SwiftUI package that makes any `View` pinch-to-zoomable, draggable
 - **Optional Out-of-Bounds Background:** Fill the “empty” area around a zoomed view with a custom color or gradient.
 
 ---
+
+🤝 Contributions
+
+Contributions, issues, and feature requests are welcome! Feel free to:
+
+Fork the repository.
+Create a new branch (git checkout -b feature/YourFeature).
+Commit your changes (git commit -m "Add your feature").
+Push to the branch (git push origin feature/YourFeature).
+Open a Pull Request.
+Please make sure to follow Swift API design guidelines and keep code formatting consistent.
+
+---
+
+📝 License
+
+ZoomableViewModifier is released under the MIT License.
+Feel free to use, modify, and distribute it in your projects.
+
+---
+
+⚡️ Acknowledgments
+
+Inspired by various SwiftUI gesture demos and community contributions.
+Built and tested on iOS 16 and iOS 17 beta.
