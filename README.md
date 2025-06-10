@@ -5,6 +5,8 @@
 A lightweight SwiftUI package that makes any `View` pinch-to-zoomable, draggable, and double-tap-zoomable. Perfect for images, maps, charts, or any container you want your users to interact with.
 
 ![zoomable-demo](https://github.com/user-attachments/assets/ca586a48-6be9-46bb-8113-e3dc129b16e9)
+[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2FHydralo%2FZoomableModifier%2Fbadge%3Ftype%3Dswift-versions)](https://swiftpackageindex.com/Hydralo/ZoomableModifier)
+[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2FHydralo%2FZoomableModifier%2Fbadge%3Ftype%3Dplatforms)](https://swiftpackageindex.com/Hydralo/ZoomableModifier)
 
 ---
 
